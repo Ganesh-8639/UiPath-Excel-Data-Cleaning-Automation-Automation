@@ -1,0 +1,263 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="493.20000000000005,7428" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="duplicateRows" />
+      <Variable x:TypeArguments="x:Int32" Name="invalidEmailRows" />
+      <Variable x:TypeArguments="x:Int32" Name="invalidPhoneRows" />
+      <Variable x:TypeArguments="x:Int32" Name="correctRows" />
+      <Variable x:TypeArguments="x:Int32" Name="totalRows" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtInput" />
+      <Variable x:TypeArguments="x:Int32" Name="issueRows" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="486.4,7404.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="484.8,7009.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ReadRange AddHeaders="True" DataTable="[dtInput]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="451.2,226.4" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="A1:K10101" SheetName="Sheet1" WorkbookPath="Input\Excel_Data_Cleaning_Input_10000.xlsx" />
+          <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_10">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Int32">[totalRows]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Int32">[dtInput.Rows.Count]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_12">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Int32">[issueRows]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Int32">[dtInput.AsEnumerable().Count(Function(r) r.ItemArray.Any(Function(x) x Is Nothing OrElse x Is DBNull.Value OrElse String.IsNullOrWhiteSpace(Convert.ToString(x))))]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_9" Text="[&quot;Rows with missing data: &quot; + issueRows.ToString]" />
+          <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_13">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Int32">[correctRows]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Int32">[totalRows - issueRows]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_10" Text="[&quot;Rows without missing data: &quot; + correctRows.ToString]" />
+          <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_14">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Int32">[invalidPhoneRows]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Int32">[dtInput.AsEnumerable().Count(Function(r) Not r.IsNull("Phone_Number") AndAlso System.Text.RegularExpressions.Regex.Replace(r("Phone_Number").ToString(), "[^0-9]", "").Length &lt;&gt; 10)]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_11" Text="[&quot;Invalid phone numbers: &quot; + invalidPhoneRows.ToString]" />
+          <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_15">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Int32">[invalidEmailRows]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Int32">[dtInput.AsEnumerable().Count(Function(r) Not r.IsNull("Email") AndAlso Not System.Text.RegularExpressions.Regex.IsMatch(r("Email").ToString().Trim(), "^[^@\s]+@[^@\s]+\.[^@\s]+$"))]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_12" Text="[&quot;Invalid email addresses: &quot; + invalidEmailRows.ToString]" />
+          <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_16">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Int32">[duplicateRows]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Int32">[dtInput.Rows.Count - dtInput.DefaultView.ToTable(True).Rows.Count]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="[&quot;Duplicate rows: &quot; + duplicateRows.ToString]" />
+          <Assign sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_17">
+            <Assign.To>
+              <OutArgument x:TypeArguments="sd:DataTable">[dtInput]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="sd:DataTable">[dtInput.DefaultView.ToTable(True)]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <ui:InvokeCode ContinueOnError="{x:Null}" Code="' Create Data Quality Status column&#xA;If Not dt.Columns.Contains(&quot;Data_Quality_Status&quot;) Then&#xA;    dt.Columns.Add(&quot;Data_Quality_Status&quot;, GetType(String))&#xA;End If&#xA;&#xA;' Process every row&#xA;For Each row As DataRow In dt.Rows&#xA;&#xA;    ' 1. Customer_ID&#xA;    If Not row.IsNull(&quot;Customer_ID&quot;) Then&#xA;        row(&quot;Customer_ID&quot;) = row(&quot;Customer_ID&quot;).ToString.Trim()&#xA;    End If&#xA;&#xA;    ' 2. First_Name&#xA;    If Not row.IsNull(&quot;First_Name&quot;) Then&#xA;        row(&quot;First_Name&quot;) = Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(&#xA;            row(&quot;First_Name&quot;).ToString.Trim().ToLower())&#xA;    End If&#xA;&#xA;    ' 3. Last_Name&#xA;    If Not row.IsNull(&quot;Last_Name&quot;) Then&#xA;        row(&quot;Last_Name&quot;) = Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(&#xA;            row(&quot;Last_Name&quot;).ToString.Trim().ToLower())&#xA;    End If&#xA;&#xA;    ' 4. Phone_Number - keep digits only&#xA;    Dim phoneText As String = &quot;&quot;&#xA;&#xA;    If Not row.IsNull(&quot;Phone_Number&quot;) Then&#xA;        phoneText = System.Text.RegularExpressions.Regex.Replace(&#xA;            row(&quot;Phone_Number&quot;).ToString(), &quot;[^0-9]&quot;, &quot;&quot;)&#xA;        row(&quot;Phone_Number&quot;) = phoneText&#xA;    End If&#xA;&#xA;    ' 5. Email - trim and lowercase&#xA;    Dim emailText As String = &quot;&quot;&#xA;&#xA;    If Not row.IsNull(&quot;Email&quot;) Then&#xA;        emailText = row(&quot;Email&quot;).ToString.Trim().ToLower()&#xA;        row(&quot;Email&quot;) = emailText&#xA;    End If&#xA;&#xA;    ' 6. City&#xA;    If Not row.IsNull(&quot;City&quot;) Then&#xA;        row(&quot;City&quot;) = Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(&#xA;            row(&quot;City&quot;).ToString.Trim().ToLower())&#xA;    End If&#xA;&#xA;    ' 7. State&#xA;    If Not row.IsNull(&quot;State&quot;) Then&#xA;        row(&quot;State&quot;) = Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(&#xA;            row(&quot;State&quot;).ToString.Trim().ToLower())&#xA;    End If&#xA;&#xA;    ' 8. Department&#xA;    If Not row.IsNull(&quot;Department&quot;) Then&#xA;        row(&quot;Department&quot;) = Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(&#xA;            row(&quot;Department&quot;).ToString.Trim().ToLower())&#xA;    End If&#xA;&#xA;    ' 9. Registration_Date - trim spaces&#xA;    If Not row.IsNull(&quot;Registration_Date&quot;) Then&#xA;        row(&quot;Registration_Date&quot;) = row(&quot;Registration_Date&quot;).ToString.Trim()&#xA;    End If&#xA;&#xA;    ' 10. Amount - remove currency symbols and commas&#xA;    If Not row.IsNull(&quot;Amount&quot;) Then&#xA;        Dim amountText As String = row(&quot;Amount&quot;).ToString.Trim()&#xA;&#xA;        amountText = System.Text.RegularExpressions.Regex.Replace(&#xA;            amountText, &quot;[^0-9.]&quot;, &quot;&quot;)&#xA;&#xA;        row(&quot;Amount&quot;) = amountText&#xA;    End If&#xA;&#xA;    ' 11. Status - standardize values&#xA;    If Not row.IsNull(&quot;Status&quot;) Then&#xA;&#xA;        Dim statusText As String = row(&quot;Status&quot;).ToString.Trim().ToLower()&#xA;&#xA;        If statusText = &quot;active&quot; Then&#xA;            row(&quot;Status&quot;) = &quot;Active&quot;&#xA;&#xA;        ElseIf statusText = &quot;inactive&quot; Then&#xA;            row(&quot;Status&quot;) = &quot;Inactive&quot;&#xA;&#xA;        ElseIf statusText = &quot;pending&quot; Then&#xA;            row(&quot;Status&quot;) = &quot;Pending&quot;&#xA;        End If&#xA;&#xA;    End If&#xA;&#xA;    ' 12. Validate Email&#xA;    Dim emailInvalid As Boolean = False&#xA;&#xA;    If String.IsNullOrWhiteSpace(emailText) Then&#xA;        emailInvalid = True&#xA;    ElseIf Not System.Text.RegularExpressions.Regex.IsMatch(&#xA;        emailText,&#xA;        &quot;^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$&quot;) Then&#xA;&#xA;        emailInvalid = True&#xA;    End If&#xA;&#xA;    ' 13. Validate Phone Number&#xA;    Dim phoneInvalid As Boolean = False&#xA;&#xA;    If String.IsNullOrWhiteSpace(phoneText) Then&#xA;        phoneInvalid = True&#xA;    ElseIf Not System.Text.RegularExpressions.Regex.IsMatch(&#xA;        phoneText,&#xA;        &quot;^[6-9][0-9]{9}$&quot;) Then&#xA;&#xA;        phoneInvalid = True&#xA;    End If&#xA;&#xA;    ' 14. Set Data Quality Status&#xA;    If emailInvalid OrElse phoneInvalid Then&#xA;        row(&quot;Data_Quality_Status&quot;) = &quot;Has Issues&quot;&#xA;    Else&#xA;        row(&quot;Data_Quality_Status&quot;) = &quot;OK&quot;&#xA;    End If&#xA;&#xA;Next" DisplayName="space cleaning" sap:VirtualizedContainerService.HintSize="451.2,400.8" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+            <ui:InvokeCode.Arguments>
+              <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dt">[dtInput]</InOutArgument>
+            </ui:InvokeCode.Arguments>
+          </ui:InvokeCode>
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_14" Text="[&quot;Rows after removing duplicates: &quot; + dtInput.Rows.Count.ToString]" />
+          <ueab:ExcelApplicationCard DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="451.2,4367.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="Output\Excel_Data_Cleaning_Output.xlsx">
+            <ueab:ExcelApplicationCard.Body>
+              <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,4148" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteRangeX_3" IgnoreEmptySource="False" Source="[dtInput]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Cleaning_Report&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteCellX_19" Value="[&quot;Cleaning Summary Report&quot;]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Cleaning_Report&quot;).Cell(&quot;A3&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteCellX_20" Value="[&quot;Metric&quot;]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Cleaning_Report&quot;).Cell(&quot;B3&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteCellX_21" Value="[&quot;Count&quot;]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Cleaning_Report&quot;).Cell(&quot;A5&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteCellX_22" Value="[&quot;Records After Duplicate Removal&quot;]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Cleaning_Report&quot;).Cell(&quot;B5&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteCellX_23" Value="[dtInput.Rows.Count]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Cleaning_Report&quot;).Cell(&quot;A6&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteCellX_24" Value="[&quot;Rows With Missing Data&quot;]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Cleaning_Report&quot;).Cell(&quot;B6&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteCellX_25" Value="[issueRows]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Cleaning_Report&quot;).Cell(&quot;A7&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteCellX_26" Value="[&quot;Invalid Phone Numbers&quot;]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Cleaning_Report&quot;).Cell(&quot;B7&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteCellX_27" Value="[invalidPhoneRows]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Cleaning_Report&quot;).Cell(&quot;A8&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteCellX_28" Value="[&quot;Invalid Email Addresses&quot;]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Cleaning_Report&quot;).Cell(&quot;B8&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteCellX_29" Value="[invalidEmailRows]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Cleaning_Report&quot;).Cell(&quot;A9&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteCellX_30" Value="[&quot;Duplicate Rows Removed&quot;]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Cleaning_Report&quot;).Cell(&quot;B9&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteCellX_31" Value="[duplicateRows]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Cleaning_Report&quot;).Cell(&quot;A11&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteCellX_32" Value="[&quot;Processing Status&quot;]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Cleaning_Report&quot;).Cell(&quot;B11&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteCellX_33" Value="[&quot;Completed Successfully&quot;]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Cleaning_Report&quot;).Cell(&quot;A4&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteCellX_34" Value="[&quot;Total Records&quot;]" />
+                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Cleaning_Report&quot;).Cell(&quot;B4&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,220.8" sap2010:WorkflowViewState.IdRef="WriteCellX_35" Value="[totalRows]" />
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_15" Text="[&quot;Cleaning completed. Rows processed: &quot; + dtInput.Rows.Count.ToString]" />
+                </Sequence>
+              </ActivityAction>
+            </ueab:ExcelApplicationCard.Body>
+          </ueab:ExcelApplicationCard>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Catch" sap:VirtualizedContainerService.HintSize="484.8,173.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="451.2,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_16" Text="[&quot;Error occurred: &quot; + exception.Message]" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="484.8,89.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </TryCatch.Finally>
+    </TryCatch>
+  </Sequence>
+</Activity>
